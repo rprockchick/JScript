@@ -1,0 +1,3 @@
+This is to showcase my work in advanced javascript.
+Fundamentals are key to success in anything we learn. 
+A great foundation always leads to great things...To that purpose, this is my work in Javascript.
