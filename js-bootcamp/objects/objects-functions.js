@@ -11,9 +11,13 @@ let otherBook = {
 }
 
 let getSummary = function(book){
-console.log(`Book ${book.title} by author ${book.author}`)
 
+    return{
+        summary: `Book ${book.title} by author ${book.author}`,
+        pageCountSummary: `Book ${book.title} is ${book.pageCount} pages long`
+    } //returning an object with properties summary and pageCountSummary
 }
 
-getSummary(myBook)
-getSummary(otherBook)
+console.log(getSummary(myBook))
+console.log(getSummary(otherBook).summary)
+console.log(getSummary(otherBook).pageCountSummary)
