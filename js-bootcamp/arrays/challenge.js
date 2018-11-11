@@ -14,6 +14,10 @@ const todo = [
 {
     title: 'clean room',
     status: 'complete'
+},
+{
+    title: 'water diet',
+    status: 'not complete'
 }
 ]
 
@@ -27,9 +31,9 @@ const index = todos.findIndex( function(todo,index){
     console.log(index)
 })
     
-//return todos[index]
+if(index > -1){
 todo.splice(index,1)
-
+}
 }
 
 
