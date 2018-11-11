@@ -14,12 +14,21 @@
 
 
     //find note by passing args to a function
-    const findNote = function(notes,noteTitle) {
+    /* const findNote = function(notes,noteTitle) {
         const index = notes.findIndex(function(note, index){
-            return note.title === noteTitle
+            return (note.title).toLowerCase() === noteTitle.toLowerCase()
         })
         return notes[index]
-    }
+    } */
     
-    const notetofind = findNote(notes,'Habbits')
+    const findNote = function(notes, noteTitle){
+
+        /*const note = */
+        return notes.find(function(note,index){
+            return note.title.toLowerCase() === noteTitle.toLowerCase() 
+        })
+        //return note
+    }
+
+    const notetofind = findNote(notes,'habbits')
     console.log(notetofind)
