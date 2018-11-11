@@ -43,3 +43,5 @@ const index = notes.findIndex(function(note, index){
 
 //findIndex is efficient as it stops going through array once element is found
 console.log(index)
+
+
