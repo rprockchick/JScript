@@ -1,6 +1,13 @@
 const account = {
     name: 'James Bond',
     expenses: [],
+    incomes: [],
+    addIncome: function(description,amount){
+        this.incomes.push({
+            description: description,
+            amount: amount
+        })
+},
     addExpense: function(description,amount){
             this.expenses.push({
                 description: description,
@@ -9,14 +16,21 @@ const account = {
     },
     getAccountSummary: function(){
         let totalexpense = 0
+        let totalIncome = 0
 
         this.expenses.forEach( function(expense){
             totalexpense = totalexpense + expense.amount
-            return totalexpense
+            
+
+        })
+
+        this.incomes.forEach( function(income){
+            totalIncome = totalIncome + income.amount
+            
 
         })
         
-        return `${this.name} has $${totalexpense} in expenses`
+        return `${this.name} has $${totalIncome - totalexpense} in account. $${totalIncome} in income and $${totalexpense} in expenses`
     }
 }
 
@@ -30,4 +44,5 @@ const account = {
 
 account.addExpense('Martini',350)
 account.addExpense('Escort',850)
+account.addIncome('Kill 006',5000)
 console.log(account.getAccountSummary())
