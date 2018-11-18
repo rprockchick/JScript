@@ -93,6 +93,6 @@ addtodolist(todo)
 
 
 
-document.querySelector('button').addEventListener('click',function(e){
+document.querySelector('#add-todo').addEventListener('click',function(e){
     console.log('todo added')
 })
