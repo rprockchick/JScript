@@ -10,6 +10,12 @@ h1{
 
 }
 
+h3{
+    color: #972f57;
+    font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+
+}
+
 body{
     font-family: Arial,x-locale-body,sans-serif;
 }
