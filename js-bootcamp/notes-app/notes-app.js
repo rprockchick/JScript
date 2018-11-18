@@ -14,5 +14,10 @@ const q = document.querySelectorAll('p')
 q.forEach(function(item){
     console.log(item.textContent)
     item.textContent = 'I am the Joker'
+    
     //item.remove()
 })
+
+const newpara = document.createElement('p')
+newpara.textContent = 'This is a new element from javascript'
+document.querySelector('body').appendChild(newpara)
