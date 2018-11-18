@@ -48,7 +48,11 @@ p.forEach(function(item){
 
 */
 
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> 6c8a81f206168730d5afd0079c7581684e79b731
 
 const showToDoLeft = function(todo){
     let count = 0
@@ -92,6 +96,10 @@ newp.textContent = `You have ${incompleteTodos.length} todos left to be complete
 document.querySelector('body').appendChild(newp)
 addtodolist(todo)
 
+<<<<<<< HEAD
+=======
+*/
+>>>>>>> 6c8a81f206168730d5afd0079c7581684e79b731
 
 
 document.querySelector('button').addEventListener('click',function(e){
