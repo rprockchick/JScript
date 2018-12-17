@@ -96,3 +96,12 @@ addtodolist(todo)
 document.querySelector('#add-todo').addEventListener('click',function(e){
     console.log('todo added')
 })
+
+//listen for text change
+
+document.querySelector("#enter-todo").addEventListener('input',function(e){
+
+    const newp = document.createElement('p')
+    newp.textContent = e.target.value;
+    document.querySelector('body').appendChild(newp)
+})

@@ -74,3 +74,7 @@ h1#title.application (Target h1 that has id="title" and class="application")
 h1.application#title (Target h1 that has class="application" and id="title")
 
 */ 
+
+document.querySelector('#search-text').addEventListener('input',function(e){
+    console.log(e.target.value)
+})
